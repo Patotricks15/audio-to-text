@@ -3,6 +3,8 @@ from pydub import AudioSegment
 import speech_recognition as sr
 import io
 from docx import Document
+import os
+
 
 def mp3_to_text(mp3_file):
     # Carregar o arquivo MP3
