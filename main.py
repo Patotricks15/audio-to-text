@@ -28,10 +28,7 @@ def gerar_docx(texto_transcrito):
 # Configurações da página do Streamlit
 st.title("Transcrição de Áudio para DOCX")
 st.write("Faça o upload de um arquivo MP3 para transcrição")
-ffprobe_path = 'ffprobe'
 
-# Definir a variável de ambiente para o caminho do ffprobe
-os.environ["FFPROBE_PATH"] = ffprobe_path
 # Upload do arquivo MP3
 audio_file = st.file_uploader("Selecione o arquivo MP3", type=["mp3"])
 
